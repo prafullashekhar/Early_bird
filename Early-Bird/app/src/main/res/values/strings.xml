@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Early Bird</string>
+    <string name="setting">Settings</string>
+    <string name="about">About</string>
+    <string name="open_navigation_drawer">Open Navigation Drawer</string>
+    <string name="close_navigation_drawer">Close Navigation Drawer</string>
+    <string name="everyday">EVERYDAY</string>
+    <string name="save">SAVE</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+</resources>

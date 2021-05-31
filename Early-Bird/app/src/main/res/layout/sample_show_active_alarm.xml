@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/editAlarm"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/active_alarm_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/daysCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Everyday"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timeAmPm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:fontFamily="@font/palanquin_dark_bold"
+            android:text="AM"
+            android:textColor="@color/Amcolor"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/showTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="06:30"
+            android:textColor="@color/text_color"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/on_off_toggle_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/alarmOn"
+            android:layout_width="50dp"
+            android:paddingTop="7dp"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round_button_bg_on"
+            android:padding="5dp"
+            android:text="ON"
+            android:textColor="@color/text_color" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/alarmOff"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="7dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_button_bg_off"
+            android:padding="5dp"
+            android:text="OFF"
+            android:textColor="#CCB1AB" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
